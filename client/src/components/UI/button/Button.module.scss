@@ -1,0 +1,27 @@
+.btn{
+	padding:11px 16px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 12px;
+	transition:all 0.2s ease-in 0s;
+	border-radius:8px;
+	color:#fff;
+
+	&:hover{
+		opacity:0.8;
+	}
+
+	@media(min-width:767.98px) {
+		font-size: 18px;
+	}
+}
+
+.blue{
+	box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+	background-color: var(--colorPrimary);
+	
+}
+.red {
+	box-shadow: 0px 4px 12px rgb(243, 35, 35);
+	background-color: var(--colorPrimaryRed);
+}

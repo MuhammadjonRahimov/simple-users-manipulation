@@ -1,0 +1,88 @@
+.window{
+	height: 100%;
+	display: grid;
+	place-items:center;
+	background-color: rgba(189, 190, 190, 0.649);
+	padding:0 10px;
+
+	&__row{
+		background-color: #fff;
+		border-radius:8px;
+		width:100%;
+		max-width:580px;
+		padding:16px;
+		@media(min-width:767px) {
+			padding:32px;
+		}
+		& .link-wrapper{
+			text-align: center;
+			margin-top: 32px;
+			font-size: 12px;
+			@media(min-width:767px) {
+				font-size: 14px;
+			}
+			& span {
+				color: var(--colorSecondaryGray);
+				margin-right: 5px;
+			}
+			& .link{
+				align-self:start;
+				padding:5px;
+				color:rgb(90, 206, 245);
+				line-height: calc(20/14);
+				letter-spacing: 0.3px;
+				color: --var(--colorPrimary);
+			}
+		}
+	}
+	&__form{
+		display: flex;
+		flex-direction:column;
+
+		& > *:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	& label .input-wrapper {
+		position:relative;
+		& svg{
+			position:absolute;
+			right: 14px;
+			top:50%;
+			transform:translate(-50%, -50%);
+		}
+	}
+	& > label > p:first-child{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+		color: #9FA2B4;
+		text-align: left;
+		margin-bottom: 6px;
+	}
+	& > label > p:last-child{
+		font-size: 12px;
+		color: red;
+		text-align: center;
+		margin:10px 0;
+	}
+	& input {
+		color: #4B506D;
+	}
+	& input,button{
+			font-size: 14px;
+			line-height: calc(20/14);
+			width: 100%;
+			border-radius:8px;
+			padding:11px 16px;
+			outline:none;
+			border:1px solid 	#DFE0EB;
+		}
+		input::placeholder{
+			color: var(--colorSecondaryGray);
+			opacity:0.6;
+		}
+		input[type=password], input[type=number] {
+			padding-right: 50px;
+		}
+	}
+}
